@@ -1,0 +1,63 @@
+/* dark.css */
+body.dark-mode{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+.sidebar.dark-mode {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+.menu-btn.dark-mode {
+    background-color: none;
+    color: #e0e0e0;
+}
+.menu-btn.dark-mode .material-symbols-outlined {
+    color: #fff;
+}
+.dark-mode .dark-mode-btn, .dark-mode .translation-btn {
+    background-color: transparent;
+    color: #fff;
+}
+.dark-mode .main-title{
+    background-color: #fff;
+    color: #333;
+}
+.dark-mode .inner-education-container{
+    background-color: #414141;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.3);
+}
+.dark-mode .inner-education-container h2{
+    color: #fff;
+}
+.dark-mode .inner-education-container a{
+    color: #fff;
+}
+.dark-mode .content-education h3, .dark-mode .content-education p, .dark-mode .content-education li{
+    color: #fff;
+}
+.dark-mode .content-education a{
+    color: #fff;
+}
+.dark-mode .content-education a:hover{
+    background-color: #222;
+}
+.dark-mode .data-text a{
+    color: #fff;
+}
+.dark-mode .chatbot-container{
+    background-color: #bbb;
+}
+.dark-mode .inner-profile-container{
+    background-color: #333;
+}
+.dark-mode .name-container{
+    color: #fff;
+    border-bottom: #fff solid 1px;
+}
+.dark-mode .name-container img{
+    border: #fff solid 2px;
+}
+.dark-mode .content-profile{
+    color: #fff;
+    border-bottom: #fff solid 1px;
+}

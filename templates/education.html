@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação  |  Bruno Coelho</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/default.css">
+    <link rel="stylesheet" href="/static/dark.css">
+    <link rel="stylesheet" href="/static/chatbot.css">
+    <style>
+        body{
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- SIDE MENU -->
+    <div class="sidebar">
+        <button class="expand-btn" onclick="toggleMenu()" title="Abrir Menu">☰</button>
+        <div class="menu">
+            <button class="menu-btn" onclick="profileBtn()"><span class="material-symbols-outlined">account_circle</span><span class="menu-text">Perfil</span></button>
+            <button class="menu-btn" onclick="projectsBtn()"><span class="material-symbols-outlined">folder</span><span class="menu-text">Projetos</span></button>
+            <button class="menu-btn-choose" onclick="educationBtn()"><span class="material-symbols-outlined">school</span><span class="menu-text">Educação</span></button>
+            <button class="menu-btn" onclick="workExperienceBtn()"><span class="material-symbols-outlined">work_history</span><span class="menu-text">Experiência Profissional</span></button>
+            <button class="menu-btn last-btn" onclick="settingsBtn()"><span class="material-symbols-outlined">settings</span><span class="menu-text">Definições</span></button>
+        </div>
+    </div>
+    <!-- DARK MODE BTN -->
+    <div class="dark-mode-container">
+        <button class="dark-mode-btn" onclick="toggleDarkMode()" title="Dark Mode">
+            <span class="material-symbols-outlined">brightness_4</span>
+            <span class="menu-text">Dark Mode</span>
+        </button>
+    </div>
+    <!-- MAIN-CONTAINER -->
+    <div class="container-education">
+        <h1 class="main-title">Educação</h1>
+        <div class="inner-education-container">
+            <div class="content-education">
+                <h3 class="content-education-title">Curso de Front-End:</h3>
+                <p>2024/2024</p>
+                <p>█ 15% Em Progresso</p>
+                <p>Instituição - Udemy</p>
+                <p>Curso - Front-End</p>
+                <p>Principais conteúdos:</p>
+                <ul class="content-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>HTML5</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>CSS</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>JavaScript</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>React JS</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>TypeScript com React</li>
+                    <a href="#">Para mais informações clique aqui!</a>
+                </ul>
+            </div>
+            <div class="content-education">
+                <h3 class="content-education-title">Curso de Programação Python:</h3>
+                <p>2022/2024</p>
+                <p>✅ Concluído</p>
+                <p>Instituição - Tokio School</p>
+                <p>Curso - Programação Python</p>
+                <p>Principais conteúdos:</p>
+                <ul class="content-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>Lógica de Programação</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Manipulação de Dados</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Programação Orientada a Objetos</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Tratamento de Dados</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Desenvolvimento Web (Flask)</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Manipulação de Bases de Dados (SQL)</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Tratamentos de Exceções</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Resolução de Erros e Bug´s</li>
+                    <a href="#">Para mais informações clique aqui!</a>
+                </ul>
+            </div>
+            <div class="content-education">
+                <h3 class="content-education-title">Especialização em Machine Learning:</h3>
+                <p>2022/2025</p>
+                <p>███ 40% Em Progresso</p>
+                <p>Instituição - Tokio School</p>
+                <p>Especialização - Machine Learning</p>
+                <p>Principais conteúdos:</p>
+                <ul class="content-list">
+                    <li><span class="material-symbols-outlined">check_circle</span> Lógica de Manipulação de Inteligência Artificial</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Algoritmos de aprendizado supervisionado e não supervisionado</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Regulação e seleção de modelo</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Desenvolvimento de scripts para análise de dados</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Limpeza de dados</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Transformações e engenharia de features</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Regressão linear e logística</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Árvores de decisão, Random Forests, e Gradient Boosting</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Aplicações práticas e algoritmos populares (Q-Learning, Deep Q-Learning)</li>
+                    <li><span class="material-symbols-outlined">check_circle</span> Criação de APIs para modelos de Machine Learning</li>
+                    <a href="#">Para mais informações clique aqui!</a>
+                </ul>
+            </div>
+            <div class="content-education">
+                <h3 class="content-education-title">Ensino Médio:</h3>
+                <p>2014/2017</p>
+                <p>✅ Concluído</p>
+                <p>Instituição - Casa Pia - Belém</p>
+                <p>Curso - Mecatrônica Automóvel</p>
+                <p>Principais conteúdos:</p>
+                <ul class="content-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>Mecânica Automóvel</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>Eletrônica Automóvel</li>
+                </ul>
+            </div>
+            <div class="content-education">
+                <h3 class="content-education-title">Diplomas/Cursos/Formações:</h3>
+                <p>✅ Concluído</p>
+                <ul class="content-list">
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Diploma - PCAP (Certified Associate Python Programmer) - (Python.org)</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Diploma - PCEP (Certified Entry-Level Python Programmer) - (Python.org)</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Curso - Python: Formação Básica - (Linkedin Learning)</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Curso - Técnicas Avançadas de Python - (Linkedin Learning).</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Curso - SQL Server: Formação Básica - (Linkedin Learning).</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Curso - Git e GitHub: Formação Básica  - (Linkedin Learning).</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Curso - HTML: Formação Básica - (Linkedin Learning).</li>
+                    <li><span class="material-symbols-outlined">check_circle</span>2024 - Curso - Introdução às Competências Essenciais para a Carreira de Desenvolvimento de Software - (Linkedin Learning)</li>
+                    <a href="#">Para mais informações clique aqui!</a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- CHAT BOT -->
+    <button class="chatbot-button" title="Chat"><span class="material-symbols-outlined">chat</span></button>
+    <div class="chatbot-container">
+        <div class="chatbot-header">DevBot</div>
+        <div class="chatbot-messages"></div>
+        <div class="chatbot-predefined-buttons">
+            <button class="chatbot-button-predefined" data-message="Preciso de ajuda!">Ajuda</button>
+            <button class="chatbot-button-predefined" data-message="Onde posso encontrar os projetos?">Projetos</button>
+            <button class="chatbot-button-predefined" data-message="Como posso contacta-lo?">Contactos</button>
+            <button class="chatbot-button-predefined" data-message="Onde posso ver a sua Experiência Profissional?">Experiência Profissional</button>
+            <button class="chatbot-button-predefined" data-message="Onde posso ver o seu Perfil?">Perfil</button>
+            <button class="chatbot-button-predefined" data-message="Diz me como fazer Print em várias linguas de programação.">Print</button>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" class="chatbot-input" placeholder="Digite uma mensagem...">
+            <button class="chatbot-send">Enviar</button>
+        </div>
+    </div>
+    <!-- SCRIPPT´S -->
+    <script src="/static/js/sidemenu.js"></script><script src="/static/js/main.js"></script><script src="/static/js/dark.js"></script><script src="/static/js/chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pefil  |  Bruno Coelho</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/default.css">
+    <link rel="stylesheet" href="/static/dark.css">
+    <link rel="stylesheet" href="/static/chatbot.css">
+</head>
+<body>
+    <!-- SIDE MENU -->
+    <div class="sidebar">
+        <button class="expand-btn" onclick="toggleMenu()" title="Abrir Menu">☰</button>
+        <div class="menu">
+            <button class="menu-btn-choose" onclick="profileBtn()"><span class="material-symbols-outlined">account_circle</span><span class="menu-text">Perfil</span></button>
+            <button class="menu-btn" onclick="projectsBtn()"><span class="material-symbols-outlined">folder</span><span class="menu-text">Projetos</span></button>
+            <button class="menu-btn" onclick="educationBtn()"><span class="material-symbols-outlined">school</span><span class="menu-text">Educação</span></button>
+            <button class="menu-btn" onclick="workExperienceBtn()"><span class="material-symbols-outlined">work_history</span><span class="menu-text">Experiência Profissional</span></button>
+            <button class="menu-btn last-btn" onclick="settingsBtn()"><span class="material-symbols-outlined">settings</span><span class="menu-text">Definições</span></button>
+        </div>
+    </div>
+    <!-- DARK MODE BTN -->
+    <div class="dark-mode-container">
+        <button class="dark-mode-btn" onclick="toggleDarkMode()" title="Dark Mode">
+            <span class="material-symbols-outlined">brightness_4</span>
+            <span class="menu-text">Dark Mode</span>
+        </button>
+    </div>
+    <!-- MAIN-CONTAINER -->
+    <div class="container-education">
+            <h1 class="main-title">Currículo</h1>
+        <div class="inner-profile-container">
+            <div class="name-container">
+                <img src="/static/img/perfil.png" alt="Profile Photo">
+                <p>Bruno Veloso Coelho</p>
+                <p class="data">
+                    <span class="material-symbols-outlined" style="font-size: 16px; margin-right: 5px; color: #1adb2a;">call</span>
+                    <span class="data-text">+351 965 576 916</span>
+                    <span class="material-symbols-outlined" style="font-size: 16px; margin-left: 30px; margin-right: 5px; color: #bb1adb;">mail</span>
+                    <span class="data-text">brunovcoelho.dev@gmail.com</span>
+                    <span class="material-symbols-outlined" style="font-size: 20px; margin-left: 30px; margin-right: 5px; color: #0051ff;">home_pin</span>
+                    <span class="data-text">Tavessa dos associados  |  Linda-a-Velha 2795-027</span>
+                    <span class="material-symbols-outlined" style="font-size: 24px; margin-left: 30px; margin-right: 5px; color: #db571a;">commit</span>
+                    <span class="data-text"><a href="https://github.com/BrunoKorpuzCoelho">GitHub</a></span>
+                </p>
+            </div>
+            <div class="content-profile">
+                <h5>Sobre mim:</h5>
+                <p>Sou uma pessoa extremamente dedicada e responsável, com um excelente espírito de trabalho em equipa. Estou sempre pronto para abraçar novos desafios e contribuir com entusiasmo e competência.</p>
+            </div>
+            <div class="content-profile">
+                <h5>Objetivo profissional:</h5>
+                <p>Em busca de uma oportunidade para desenvolver e melhorar meus conhecimentos, e também algo que possa me instruir de forma crescente e contínua, visando sempre o crescimento entre mim e a empresa.</p>
+            </div>
+            <div class="content-profile">
+                <h5>Resumo da experiência profissional:</h5>
+                <p>● Tenho experiência em diversos projetos de programação realizados como freelancer, destacando-se o uso de tecnologias como Flask e bases de dados SQL. Utilizo linguagens de programação como HTML5, CSS, JavaScript e Python.</p>
+                <p>● Profissional com 4 anos de experiência no setor automóvel, especializado na recepção de viaturas, identificação de peças, elaboração de orçamentos e gestão de uma equipa de 5 mecânicos.</p>
+            </div>
+        </div>
+    </div>
+    <!-- CHAT BOT -->
+    <button class="chatbot-button" title="Chat"><span class="material-symbols-outlined">chat</span></button>
+    <div class="chatbot-container">
+        <div class="chatbot-header">DevBot</div>
+        <div class="chatbot-messages"></div>
+        <div class="chatbot-predefined-buttons">
+            <button class="chatbot-button-predefined" data-message="Preciso de ajuda!">Ajuda</button>
+            <button class="chatbot-button-predefined" data-message="Onde posso encontrar os projetos?">Projetos</button>
+            <button class="chatbot-button-predefined" data-message="Como posso contacta-lo?">Contactos</button>
+            <button class="chatbot-button-predefined" data-message="Onde posso ver a sua Experiência Profissional?">Experiência Profissional</button>
+            <button class="chatbot-button-predefined" data-message="Onde posso ver o seu Perfil?">Perfil</button>
+            <button class="chatbot-button-predefined" data-message="Diz me como fazer Print em várias linguas de programação.">Print</button>
+        </div>
+        <div class="chatbot-input-container">
+            <input type="text" class="chatbot-input" placeholder="Digite uma mensagem...">
+            <button class="chatbot-send">Enviar</button>
+        </div>
+    </div>
+    <!-- SCRIPPT´S -->
+    <script src="/static/js/sidemenu.js"></script><script src="/static/js/main.js"></script><script src="/static/js/dark.js"></script><script src="/static/js/chatbot.js"></script>
+</body>
+</html>
